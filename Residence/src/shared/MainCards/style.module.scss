@@ -1,0 +1,24 @@
+.box {
+  cursor: pointer;
+  overflow: hidden;
+
+  .boxImg {
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    overflow: hidden;
+
+    img {
+      overflow: hidden;
+      transition: transform 0.5s ease-in-out;
+    }
+  }
+
+  &:hover {
+    .boxImg {
+      img {
+        overflow: hidden;
+        transform: scale(1.1);
+      }
+    }
+  }
+}
